@@ -1,0 +1,99 @@
+.member {
+  &-container {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+    background: #f8f8f8 url(/src/img/member/bg-cropped.png) top left
+      no-repeat;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__logo {
+    margin-bottom: 10px;
+    &-ct {
+      @include ubuntu-bold();
+      color: black;
+      font-size: 22px;
+    }
+    &-par {
+      @include ubuntu-regular();
+      color: #989898;
+      font-size: 14px;
+    }
+  }
+  &-form {
+    margin-top: 30px;
+
+    &__button-cover {
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+    &-inputbox {
+      display: flex;
+      align-items:center;
+      padding-bottom:10px;
+      p {
+        margin: 0;
+        font-size:14px;
+      }
+      input,
+      label {
+        margin-bottom: 0!important;
+      }
+      input{
+        margin-left:15px;
+      }
+      label{
+        margin-left:5px;
+      }
+    }
+    &-terms{
+      display: flex;
+      width: 100%;
+      font-size:14px;
+      input{
+        margin-top:4px;
+      }
+      label{
+        padding-left:10px;
+      }
+    }
+    &-birthday{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      // label{
+      //   padding-right:12px;
+      // }
+    }
+
+    input,
+    label {
+      margin-bottom: 10px;
+    }
+
+    select {
+      min-height: 44px;
+      border-radius: 8px;
+      font-size: 14px;
+      @include ubuntu-medium();
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+.form-control{
+  &-birth{
+    width:70%;
+  }
+}

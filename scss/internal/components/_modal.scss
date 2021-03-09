@@ -1,0 +1,122 @@
+.modal {
+  &-content {
+    max-width: 325px;
+    margin: auto;
+    border-radius: 12px;
+    border: none;
+  }
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &-container {
+    &--submiticon {
+      padding-bottom: 25px;
+    }
+
+    &--bgimg {
+      padding-top: 15px;
+    }
+
+    &--report {
+      padding: 30px 30px 0 30px;
+      h3 {
+        font-size: 22px;
+        @include ubuntu-bold();
+      }
+      text-align: center;
+    }
+
+    &--votenow {
+      padding: 30px;
+
+      h3 {
+        font-size: 22px;
+        @include ubuntu-bold();
+      }
+
+      text-align: center;
+    }
+
+    &--exitlive {
+      padding: 30px;
+      text-align: center;
+
+      h3 {
+        font-size: 22px;
+        @include ubuntu-bold();
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      & > img {
+        padding-bottom: 25px;
+        margin: 0;
+        border-radius: 50%;
+        max-width: 50px;
+        height: auto;
+      }
+    }
+
+    &--uploadimg {
+      padding: 0 30px 30px 30px;
+      text-align: center;
+      background: url(/src/img/member/bg-cropped.png) bottom center no-repeat;
+      background-size: contain;
+
+      h3 {
+        @include ubuntu-bold();
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+
+      > button {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// Vote now
+
+.vote {
+  &__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    @include ubuntu-light();
+    font-size: 18px;
+  }
+
+  &__logo{
+    margin-bottom: 30px;
+  }
+
+  &__bttn-arrow{
+    margin-left: 5px;
+  }
+
+  &__upload{
+    padding:0;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+
+    img{
+      margin-right: 5px;
+    }
+  }
+}

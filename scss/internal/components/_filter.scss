@@ -1,0 +1,107 @@
+.filter {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &__header{
+      padding: 50px 25px 20px 25px;
+      background-color: #00043a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button{
+        background: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+      &-left{
+          display: flex;
+          align-items: center;
+
+          p{
+              margin-left: 10px;
+              margin-bottom: 0;
+          }
+      }
+
+      &-clear{
+          color: #26b1ce;
+      }
+  }
+
+  &__body{
+      display: flex;
+      height: 100%;
+      align-items: stretch;
+      padding-bottom: 70px;
+
+      &-left{
+          background-color: #EEEEEE;
+          width: 140px;
+      }
+
+      &-right{
+          flex-grow: 1;
+          overflow: auto;
+          padding: 20px 25px 20px 15px;
+      }
+  }
+
+  &__category{
+      list-style:none;
+      padding: 0;
+      margin: 0;
+      @include ubuntu-regular();
+      font-size: 14px;
+
+      li{
+          padding:15px 25px 15px 25px;
+
+          &.active{
+              background-color: #fff;
+              @include ubuntu-medium();
+          }
+      }
+  }
+  &__content{
+      display: none;
+
+      &.active{
+          display: block;
+      }
+
+      &-checkboxes{
+          font-size: 14px;
+          @include ubuntu-regular();
+          margin-top: 15px;
+      }
+
+      &-input{
+          font-size: 10px;
+          min-height: 34px;
+          border-radius: 5px;
+      }
+  }
+
+  &__footer{
+      padding: 15px 25px;
+      background-color: #fff;
+      box-shadow: 0 -1px 18px rgba(0, 0, 0, 0.09);
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app</title>
+
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="container-fluid member-container">
+
+            <div class=" member__header">
+                <a href="#" onclick="window.history.go(-1);">
+                    <img src="./img/icons/back-arrow.svg" alt="">
+                </a>
+            </div>
+            <div class=" member__content">
+                <div class=" member__top">
+                    <img class="member__logo" src="./img/member/Logo.svg" alt="">
+                    <h3 class="member__logo-ct">Become a Member</h3>
+                    <p class="member__logo-par">Become a AIADMK Member</p>
+                </div>
+            </div>
+
+            <div class="member-form">
+                <form action="">
+                    <input class="form-control" type="text" placeholder="Full Name*">
+                    <div action="" class="member-form-inputbox">
+                        <p>Gender: </p>
+                        <input type="checkbox" id="male" name="person1" value="Male">
+                        <label for="male"> M</label>
+                        <input type="checkbox" id="female" name="person2" value="Female">
+                        <label for="female"> F</label>
+                        <input type="checkbox" id="others" name="person3" value="others">
+                        <label for="others"> Others</label>
+                    </div>
+                    <div class="member-form-birthday">
+                        <label for="birthday">Date of Birth</label>
+                        <input class="form-control form-control-birth" type="date" id="birthday" name="birthday">
+                    </div>
+                    <input class="form-control" type="text" placeholder="Father / Husband's Name">
+                    <input class="form-control" type="text" placeholder="Email*">
+                    <input class="form-control" type="text" placeholder="Occupation">
+                    <input class="form-control" type="text" placeholder="Mobile*">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Assembly Constituency</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected> Party District</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <input class="form-control" type="text" placeholder="Address">
+                    <input class="form-control" type="text" placeholder="Pin / Zip Code">
+                    <input class="form-control" type="text" placeholder="Voter ID*">
+                    <div action="" class="member-form-terms">
+                        <input type="checkbox" id="term" name="terms" value="agree">
+                        <label for="term">I am a strict believer and follower of the party by laws framed by our
+                            Revolutionary leaders Dr. MGR and Dr. J. Jayalalitha.</label>
+                    </div>
+                    <div class="member-form__button-cover">
+                        <button class="bttn bttn--rounded">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

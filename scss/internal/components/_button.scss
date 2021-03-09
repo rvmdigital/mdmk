@@ -1,0 +1,130 @@
+.bttn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #FE0002;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  @include ubuntu-regular();
+
+  &:hover{
+      color: #fff;
+  }
+
+  &--full {
+    display: block;
+    width: 100%;
+  }
+  &--rounded {
+    border-radius: 100vh;
+  }
+}
+
+.bttn__lang {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 20px;
+    @include ubuntu-regular();
+
+    &--full{
+        display: block;
+        width: 100%;
+    }
+    &--rounded {
+        border-radius: 100vh;
+    }
+  }
+
+.exit__live{
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #FA3B4B;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  position: fixed;
+  @include ubuntu-regular();
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100vh;
+}
+
+.report__btn{
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #B80F31;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  position: fixed;
+  @include ubuntu-regular();
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100vh;
+  min-width: 175px;
+}
+.mlalogin__btn{
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #2BC928;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  @include ubuntu-regular();
+  border-radius: 100vh;
+}
+
+.bttn__upload{
+  display: inline-block;
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid #FE0002;
+    border-radius:100vh;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    @include ubuntu-medium();
+}
+
+.bttn__exitlive{
+  padding: 8px 35px;
+  background-color: #FE0002;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  @include ubuntu-regular();
+}
+
+.vote__btn{
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #FE0002;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  position: fixed;
+  @include ubuntu-regular();
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100vh;
+  min-width: 175px;
+  z-index: 1000;
+}
+

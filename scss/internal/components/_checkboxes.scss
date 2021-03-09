@@ -1,0 +1,11 @@
+.form-check-input{
+    
+    &[type="checkbox"]{
+        border-radius: 0;
+        border-color: #000;
+    }
+
+    &:checked {
+    background-color: #2bc928;
+    border-color: #2bc928;
+}}

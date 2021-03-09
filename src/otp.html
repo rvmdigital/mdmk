@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app</title>
+
+    <link rel="stylesheet" href="./../dist/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="container-fluid otp__container">
+            <div class="otp__header">
+                <a href="#" onclick="window.history.go(-1);">
+                    <img src="./img/icons/back-white.svg" alt="">
+                </a>
+                <img class="otp__header-logo" src="./img/otp-verification/hori-logo.svg" alt="">
+            </div>
+            <p class="otp__lead">Please enter the 4 Digit Code
+                sent to your mobile number</p>
+            <form class="otp__form" autocomplete="off">
+                <input type="text" id="digit-1" maxlength="1" name="digit-1" data-next="digit-2" />
+                <input type="text" id="digit-2" maxlength="1" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                <input type="text" id="digit-3" maxlength="1" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                <input type="text" id="digit-4" maxlength="1" name="digit-4" data-previous="digit-3" />
+            </form>
+            <span class="otp__time">Send code again in 3 min</span>
+
+            <div class="text-center">
+                <!-- <button type="button" class="bttn bttn--rounded">
+                    Confirm
+                </button> -->
+                <a href="./language.html" class="bttn bttn--rounded">
+                    Confirm
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dist/js/otp.bundle.js"></script>
+</body>
+
+</html>

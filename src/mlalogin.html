@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="hamburger">
+        <div class="hamburger__overlay"></div>
+        <div class="hamburger__content">
+            <div class="hamburger__header">
+                <div>
+                    <img class="navigation__left-logo navigation__left-logo--ham" src="./img/icons/logo.png" alt="">
+                    <select class="navigation__left-select">
+                        <option value="1">ENG</option>
+                        <option value="1">தமிழ்</option>
+                    </select>
+                </div>
+                <button type="button" class="hamburger__header-close"><img src="./img/icons/right-arrow.svg"
+                        alt=""></button>
+            </div>
+            <div class="hamburger__profile">
+                <button type="button" class="hamburger__profile-photo"><img src="https://via.placeholder.com/150"
+                        alt=""></button>
+                <button type="button" class="hamburger__profile-name"><span>Hari Shankar</span> <img
+                        src="./img/hamburger/edit-icon.svg" alt=""></button>
+            </div>
+            <ul class="hamburger__nav">
+                <li><a href="./home.html"><img src="./img/hamburger/two-leaves.svg" alt=""> Home</a></li>
+                <li><a href="./history.html"><img src="./img/hamburger/history.svg" alt=""> History</a></li>
+                <li><a href="./manifesto.html"><img src="./img/hamburger/manifesto.svg" alt=""> Manifesto</a></li>
+                <li><a href="./people.html"><img src="./img/hamburger/group.svg" alt=""> People's Wall</a></li>
+                <li><a href="./press.html"><img src="./img/hamburger/press.svg" alt=""> Press Release</a></li>
+            </ul>
+            <ul class="hamburger__extranav">
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="uploadimgbttn" tabindex="-1" aria-labelledby="uploadimgLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header pb-0" style="border: 0px;">
+                    <a class="close-btn" id="modal-closeimg"><img src="./img/icons/cancel.svg"></a>
+                </div>
+                <div class="modal-container modal-container--uploadimg">
+                    <h3>Upload Photo</h3>
+                    <button type="button">
+                        <img src="./img/icons/upload.svg" alt="">
+                    </button>
+                    <div class="text-center">
+                        <button type="button" disabled class="bttn__exitlive bttn--rounded">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="uploadvidbttn" tabindex="-1" aria-labelledby="uploadvidLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header pb-0" style="border: 0px;">
+                    <a class="close-btn" id="modal-closevid"><img src="./img/icons/cancel.svg"></a>
+                </div>
+                <div class="modal-container modal-container--uploadimg">
+                    <h3>Upload Video</h3>
+                    <button type="button">
+                        <img src="./img/icons/upload.svg" alt="">
+                    </button>
+                    <div class="text-center">
+                        <button type="button" disabled class="bttn__exitlive bttn--rounded">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="home-main">
+        <div class="body-container">
+            <div class="container-fluid mla__container">
+                <img src="./img/mla-login/vai-photo.png" alt="" class="mla__photo">
+                <div class="mla__content">
+                    <button class="navigation__left-ham" type="button">
+                        <img src="./img/icons/hamburger-white.svg" alt="">
+                    </button>
+                    <a class="mlalogin__btn" href="./home.html">Go Live</a>
+                </div>
+                <div class="mla__title">
+                    <div class="mla__title_icon">
+                        <img src="./img/mla-login/twitter-logo-white.svg">
+                        <img src="./img/mla-login/facebook-logo-white.svg">
+                        <img src="./img/mla-login/instagram-logo-white.svg">
+                    </div>
+                    <p class="mla__title_1">Chief Minister</p>
+                    <h2 class="mla__title_2">Vaiko</h2>
+                    <p class="mla__title_3">Chief of MDMK party</p>
+                    <div class="mla__contact">
+                        <div class="mla__contact--fir">
+                            <span>
+                                <p>+91-9443146857</p>
+                            </span>
+                        </div>
+                        <div class="mla__contact--sec">
+                            <span>
+                                <p>cmcell@tn.gov.in</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mla__biography">
+                <div class="mla__title_head">
+                    <h3>Biography</h3>
+                </div>
+                <div class="mla__biography_history">
+                    <div class="mla__biography_born">
+                        <img src="img/mla-login/cake.svg" alt=" ">
+                        <p>Born On</p>
+                        <p>12 May 1954</p>
+                    </div>
+                    <div class="mla__biography_place ">
+                        <img src="img/mla-login/location.svg " alt=" ">
+                        <p>Place of Birth</p>
+                        <p>Siluvam Palayam</p>
+                    </div>
+                    <div class="mla__biography_proff ">
+                        <img src="img/mla-login/briefcase.svg " alt=" ">
+                        <p>Profession</p>
+                        <p>Agriculturist</p>
+                    </div>
+                </div>
+                <div class="mla__biography_para">
+                    <p> Vaiyapuri Gopalsamy, better known as Vaiko, is an Indian politician. He is a member of the
+                        Rajya Sabha, the upper house of the Parliament of India from Tamil Nadu. He is the founder
+                        and General Secretary of the Marumalarchi Dravida Munnetra Kazhagam (MDMK), a political party
+                        active mainly in the Indian state of Tamil Nadu. He was earlier elected to the Lok Sabha, the
+                        lower house of the Parliament of India from Sivakasi, Tamil Nadu.
+                    </p>
+
+                    <p>Vaiko is now the general secretary of the MDMK party. Vaiko was a part of Dravida Munnetra
+                        Kazhagam (DMK) and was formerly seen as the ideological protege of former Chief Minister of
+                        Tamil Nadu, Kalaignar M.Karunanidhi. Vaiko was detained for more than a year in
+                        1976-77 during the Emergency and for 40 days on charges of organising black flag demonstration
+                        against former Prime Minister Indira Gandhi's visit to Tamil Nadu in October 1977. He has been arrested multiple times for demonstrations especially during the 1986-87
+                        anti Hindi agitations.
+
+                        He entered the Rajya Sabha in 1978 and has been member of the Upper House for three terms. He
+                        has also been elected to the Lok Sabha twice.In 1993, Vaiko started MDMK due to
+                        differences with Karunanidhi.
+
+                        Vaiko was known as "Lion Of Parliament" due to his vociferous speeches in Parliament.
+                        Vaiko protested against Kerala's demand for a new dam at Mullaperiyar and proposed building of
+                        dams in Pambar and Siruvani. Vaiko also supported national interlinking of rivers and
+                        Sethusamudram Shipping Canal Project. Vaiko filed a Public Interest Litigation (PIL) in Madras
+                        High Court requesting closure of the copper smelting plant of Sterlite Industries in Tuticorin
+                        which did not follow the waste management procedures correctly and leading to the closure of the
+                        plant.
+
+                        Vaiko often goes on foot marches along with his party cadres to attract attention to issues.
+                    </p>
+
+
+                </div>
+            </div>
+
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>Social Media</h3>
+                </div>
+                <div class="mla-social__list-cover">
+                    <ul class="mla-social__list">
+                        <a href="">
+                            <li class="mlasocial__blog mlasocial__blog_list">
+                                <div class="mlasocial__blog_header">
+                                    <div class="mlasocial__blog_title">
+                                        <img src="./img/social-media/vaiko-dp.svg" alt="">
+                                        <div class="mlasocial__blog_content">
+                                            <h3>Vaiko</h3>
+                                            <p>@mdmkiw</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mlasocial__blog_tmcontent">
+                                    <p>புழல் மத்தியச் சிறையில் இருந்து கேரள முதல்வர், முன்னாள் முதல்வருக்கு வைகோ கடிதம் #Vaiko #MDMK மறுமலர்ச்சி.</p>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class=" mlasocial__blog mlasocial__blog_list">
+                                <div class="mlasocial__blog_header">
+                                    <div class="mlasocial__blog_title">
+                                        <img src="./img/social-media/vaiko-dp.svg" alt="">
+                                        <div class="mlasocial__blog_content">
+                                            <h3>Vaiko
+                                            </h3>
+                                            <p>@mdmkiw</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mlasocial__blog_tmcontent">
+                                    <p>சட்ட மாமேதை பாபாசாகேப் டாக்டர் அம்பேத்கர் பிறந்தநாள் விழாவினையொட்டி அவரது உருவச் சிலைக்கு மல்லை சத்யா மாலை அணிவித்து மரியாதை செலுத்தினார்</p>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>In The News</h3>
+                </div>
+                <div class="mla-news__list-cover">
+                    <ul class="mla-news__list">
+                        <a href="">
+                            <li class="mla-news__list-item">
+                                <img src="./img/mla-login/news-img-1.png" alt="">
+                                <p class="mla-news__list-item-content">
+                                    சென்னை. மறுமலர்ச்சி தி.மு.க சார்பில் எம்.ஜி.ஆர். நூற்றாண்டு விழா. மதிமுகம் தொலைக்காட்சியில் நேரலை.
+                                </p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="mla-news__list-item">
+                                <img src="./img/mla-login/news-img-2.png" alt="">
+                                <p class="mla-news__list-item-content">
+                                    மறுமலர்ச்சி தி.மு.க. சார்பில் பொன்மனச் செம்மல் எம்.ஜி.ஆர். நூற்றாண்டு விழா.
+                                </p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>Exclusive Pictures</h3>
+                    <button type="button" class="bttn__upload" id="uploadimg">Upload</button>
+                </div>
+
+                <div class="mla-candidates__list-cover">
+                    <ul class="mla-candidates__list">
+                        <a href="">
+                            <li class="mla-candidates__list-item">
+                                <img src="./img/mla-login/pic-1.png" alt="">
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="mla-candidates__list-item">
+                                <img src="./img/mla-login/pic-2.png" alt="">
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="mla-candidates__list-item">
+                                <img src="./img/mla-login/pic-3.png" alt="">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>Videos</h3>
+                    <button type="button" class="bttn__upload" id="uploadvid">Upload</button>
+                </div>
+                <div class="mla-video__list-cover">
+                    <ul class="mla-video__list">
+                        <a href="">
+                            <li class="mla-video__list-item">
+                                <img src="./img/mla-login/vid-1-thumb.png" alt="">
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="mla-video__list-item">
+                                <img src="./img/mla-login/vid-2-thumb.png" alt="">
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="mla-video__list-item">
+                                <img src="./img/mla-login/vid-3-thumb.png" alt="">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>Latest Meetings</h3>
+                </div>
+                <div class="mla__meetings owl-carousel owl-theme">
+                    <div class="mla__meetings-video">
+                        <video poster="./img/mla-login/latest-img-1.png">
+                            <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="mla__meetings-video">
+                        <video poster="./img/mla-login/latest-img-1.png">
+                            <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="mla__meetings-video">
+                        <video poster="./img/mla-login/latest-img-3.png">
+                            <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="home-section">
+                <div class="mla__title_head">
+                    <h3>Manifesto</h3>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="100">92%</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 8%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100">8%</div>
+                </div>
+
+                <div class="mlalogin__manifesto">
+                    <p>Completed</p>
+                    <p>On Progress</p>
+                </div>
+
+                <div class="mlamanifesto__list">
+                    <ul>
+                        <li><span>To implement the Amma National Poverty Eradication Initiative (ANPEI), which
+                                involves
+                                direct monthly transfer of Rs1,500 to the needy families of India</span></li>
+                        <li><span>To implement the Amma National Poverty Eradication Initiative (ANPEI), which
+                                involves
+                                direct monthly transfer of Rs1,500 to the needy families of India</span></li>
+                        <li><span>To implement the Amma National Poverty Eradication Initiative (ANPEI), which
+                                involves
+                                direct monthly transfer of Rs1,500 to the needy families of India</span></li>
+                        <li><span>To implement the Amma National Poverty Eradication Initiative (ANPEI), which
+                                involves
+                                direct monthly transfer of Rs1,500 to the needy families of India</span></li>
+                        <li><span>To implement the Amma National Poverty Eradication Initiative (ANPEI), which
+                                involves
+                                direct monthly transfer of Rs1,500 to the needy families of India</span></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="/dist/js/mla.bundle.js"></script>
+</body>
+
+
+</html>

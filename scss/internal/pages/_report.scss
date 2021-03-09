@@ -1,0 +1,92 @@
+.report {
+  &-container {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+    background: #f8f8f8 url(/src/img/hamburger/ham-bg.png) bottom center
+      no-repeat;
+      background-size: contain;
+  }
+
+  &-form {
+    margin-top: 30px;
+
+    &__button-cover {
+      text-align: center;
+      margin-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    input,
+    label {
+      margin-bottom: 10px;
+    }
+
+    select {
+      min-height: 44px;
+      border-radius: 8px;
+      font-size: 14px;
+      @include ubuntu-medium();
+      margin-bottom: 4px;
+    }
+
+    label {
+      font-size: 10px;
+    }
+
+    textarea{
+        resize: none;
+        margin-bottom: 10px;
+    }
+
+    &__location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 0.75rem;
+
+      &-left {
+        flex-grow: 1;
+        text-align: left;
+
+        h3 {
+          font-size: 14px;
+          @include ubuntu-light();
+          margin-bottom: 4px;
+        }
+
+        h4 {
+          @include ubuntu-medium();
+          font-size: 20px;
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-size: 9px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__uploaders{
+
+        button{
+            background: #fff;
+            width: 52px;
+            height: 52px;
+            position: relative;
+            padding: 0;
+            border-radius: 50%;
+            border: 0;
+            margin-right: 10px;
+
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+  }
+}

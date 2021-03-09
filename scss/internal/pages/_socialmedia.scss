@@ -1,0 +1,50 @@
+.social {
+  &__container {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  &__blog {
+    background-color: white;
+    box-shadow: 0 17px 135px #eeeeee;
+    padding: 15px;
+    &_list {
+      margin-bottom: 20px;
+    }
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+    }
+    &_title {
+      display: flex;
+      align-items: center;
+    }
+    &_content {
+      padding-left: 10px;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 14px;
+        @include ubuntu-bold();
+        margin: 0;
+      }
+      p {
+        font-size: 10px;
+        @include ubuntu-light();
+        margin: 0;
+      }
+    }
+    &_tmcontent {
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 12px;
+        @include ubuntu-regular();
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

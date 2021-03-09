@@ -1,0 +1,50 @@
+.live {
+  &__container {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  &__feed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width:none;
+    height: auto;
+    width: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 5;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+
+    p {
+      font-size: 14px;
+      @include ubuntu-regular();
+      span {
+        font-size: 11px;
+      }
+    }
+    &_icons img {
+      margin-left: -10px;
+    }
+    &_count {
+      display: flex;
+
+      p {
+        font-size: 13px;
+        @include ubuntu-regular();
+        display: flex;
+        padding-left: 5px;
+        padding-top: 4px;
+      }
+    }
+  }
+}

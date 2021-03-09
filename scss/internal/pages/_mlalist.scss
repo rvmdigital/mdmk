@@ -1,0 +1,73 @@
+.mlalist {
+  &-container {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+  }
+
+  &__list{
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+      &-cover{
+          margin-top: 10px;
+      }
+
+      &-item {
+        position: relative;
+        width: 100%;
+        padding-top: 126.45%;
+        overflow: hidden;
+        border-radius: 17px;
+  
+        &:after {
+          content: "";
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.5);
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0) 60%
+          );
+          z-index: 1;
+        }
+  
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          min-width: 100%;
+          min-height: 100%;
+          height: auto;
+          width: auto;
+          max-width: none;
+        }
+  
+        &-content {
+          position: absolute;
+          z-index: 5;
+          color: #fff;
+          bottom: 0;
+          width: 100%;
+          padding: 10px;
+  
+          p{
+              font-size: 11px;
+              @include ubuntu-bold();
+              margin-bottom: 0;
+  
+              span{
+                  display: block;
+              }
+          }
+        }
+      }
+  }
+}

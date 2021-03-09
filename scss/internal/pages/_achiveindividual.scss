@@ -1,0 +1,37 @@
+.achiveindiv {
+  &__container {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #f8f8f8;
+  }
+
+  &__header {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include ubuntu-bold();
+    font-size: 16px;
+  }
+  &__list_content {
+
+    margin-top: 30px;
+
+    img {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+
+    &_head {
+      @include ubuntu-bold();
+      font-size: 14px;
+      padding-top: 15px;
+    }
+    &_para {
+      @include ubuntu-light();
+      font-size: 10px;
+      padding-top: 0px;
+    }
+  }
+}

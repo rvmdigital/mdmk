@@ -1,0 +1,62 @@
+.home-live {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &-item {
+      min-width: 90px;
+      height: 185px;
+      overflow: hidden;
+      position: relative;
+
+      > img {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+
+      &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        z-index: 1;
+      }
+
+      &views {
+        position: absolute;
+        left: 10px;
+        bottom: 8px;
+        z-index: 3;
+        color: #fff;
+        font-size: 14px;
+        @include ubuntu-medium();
+        line-height: 1;
+
+        span {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}

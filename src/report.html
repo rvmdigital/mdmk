@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app</title>
+
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="reoprtSubmitedModal" tabindex="-1" aria-labelledby="reoprtSubmitedModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-container modal-container--report">
+                   <img class="modal-container--submiticon" src="./img/icons/check.svg" alt="">
+                   <h3>Your Report </h3>
+                   <h3>Successfully submitted</h3>
+                   <img class="modal-container--bgimg" src="./img/member/bg-cropped.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-container">
+        <div class="container-fluid report-container">
+            <div class=" achiveall__header">
+                <a href="#" onclick="window.history.go(-1);">
+                    <img src="./img/icons/back-arrow.svg" alt="">
+                </a>
+                <div class=" achiveall__header-title">
+                    <span>Report your Issue</span>
+                </div>
+            </div>
+
+            <div class="report-form">
+                <form action="">
+                    <input class="form-control" type="text" placeholder="District ">
+                    <input class="form-control" type="text" placeholder="Constituency">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select the Department</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="">to address the issue to the respective department authorities</label>
+                    <button type="button" class="report-form__location form-control">
+                        <div class="report-form__location-left">
+                            <h3>District : <span>Thiruvallur</span></h3>
+                            <h4>Avadi</h4>
+                            <p>Railway Station Rd, Theni, Tamil Nadu 625531</p>
+                        </div>
+                        <img src="./img/report/location-blue.svg" alt="">
+                    </button>
+                    <textarea placeholder="Mention the Issue in detail" class="form-control" rows="5"></textarea>
+                    <div class="report-form__uploaders">
+                        <button type="button"><img src="./img/report/cam-blue.svg" alt=""></button>
+                        <button type="button"><img src="./img/report/video-cam-blue.svg" alt=""></button>
+                    </div>
+
+                    <div class="report-form__button-cover">
+                        <button type="button" class="bttn bttn--rounded" id="reportSubmit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/dist/js/report.bundle.js"></script>
+</body>
+
+</html>

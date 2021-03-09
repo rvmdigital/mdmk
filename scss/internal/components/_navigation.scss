@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  margin-top: 60px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &-ham {
+      padding: 0;
+      background: 0;
+      border: 0;
+    }
+
+    &-logo {
+      margin: 0 10px;
+
+      &--ham{
+        margin-left: 0;
+      }
+    }
+
+    &-select {
+      border: 0;
+      @include ubuntu-medium();
+      font-size: 14px;
+    }
+  }
+
+  &__right {
+    .notification-active {
+      opacity: 0;
+    }
+
+    &-notification {
+      padding: 0;
+      background: 0;
+      border: 0;
+
+      &.active .notification-active {
+        opacity: 1;
+      }
+    }
+  }
+}

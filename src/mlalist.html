@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+
+<body>
+
+    
+    <div class="filter">
+        <div class="filter__header">
+            <div class="filter__header-left">
+                <button class="filter__header-back">
+                    <img src="./img/icons/back-arrow-white.svg" alt="">
+                </button>
+                <p>Filters</p>
+            </div>
+            <button class="filter__header-clear">Clear Filters</button>
+        </div>
+        <div class="filter__body">
+            <div class="filter__body-left">
+                <ul class="filter__category">
+                    <li class="active">District</li>
+                    <li>Constituency</li>
+                    <li>Department</li>
+                </ul>
+            </div>
+            <div class="filter__body-right">
+                <div class="filter__content active">
+                    <input type="text" class="form-control filter__content-input" placeholder="Search District">
+                    <div class="filter__content-checkboxes">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="dist1">
+                            <label class="form-check-label" for="dist1">
+                                Ariyalur
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="dist2" checked>
+                            <label class="form-check-label" for="dist2">
+                                Chengalpattu
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__content">
+                    Constituency
+                </div>
+                <div class="filter__content">
+                    Department
+                </div>
+            </div>
+        </div>
+        <div class="filter__footer">
+            <button type="button" class="bttn bttn--rounded">Submit</button>
+        </div>
+    </div>
+
+    <div class="body-container">
+        <div class="container-fluid mlalist-container">
+            <div class=" achiveall__header">
+                <a href="#" onclick="window.history.go(-1);">
+                    <img src="./img/icons/back-arrow.svg" alt="">
+                </a>
+                <div class=" achiveall__header-title">
+                    <span>2021 MLA Candiates</span>
+                </div>
+            </div>
+
+            <form class="searchform" action="">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search icon-col"></i></button>
+            </form>
+            <div class="people__options">
+                <div></div>
+                <div class="people__icons people__filter filter__toggle"><img src="./img/peoples-wall/filter-icon.svg" alt="">
+                    <p>Filter by</p>
+                </div>
+            </div>
+
+
+            <div class="mlalist__list-cover">
+                <ul class="mlalist__list">
+                    <a href="./mla-detail.html">
+                        <li class="mlalist__list-item">
+                            <img src="./img/home/mla-1.png" alt="">
+                            <div class="mlalist__list-item-content">
+                                <p>Vaiko
+                                    <span>Kanyakumari - 21</span>
+                                </p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="./mla-detail.html">
+                        <li class="mlalist__list-item">
+                            <img src="./img/home/mla-2.png" alt="">
+                            <div class="mlalist__list-item-content">
+                                <p>Velumani S.P
+                                    <span>Thondamuthur - 119</span>
+                                </p>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/dist/js/filter.bundle.js"></script>
+
+</body>
+
+</html>

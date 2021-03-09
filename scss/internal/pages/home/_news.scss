@@ -1,0 +1,63 @@
+.home-news {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &-item {
+      position: relative;
+      width: 318px;
+      padding-top: 52.83%;
+      overflow: hidden;
+      border-radius: 5px;
+
+      &:after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 60%
+        );
+        z-index: 1;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+      }
+
+      &-content {
+        position: absolute;
+        z-index: 5;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        @include ubuntu-medium();
+        margin-bottom: 0;
+      }
+    }
+  }
+}

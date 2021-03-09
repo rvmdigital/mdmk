@@ -1,0 +1,101 @@
+.people {
+  &__container {
+    min-height: 100vh;
+  }
+  &__list {
+    margin-top: 50px;
+    &_view {
+      background-color: white;
+      box-shadow: 0 17px 135px #eeeeee;
+      padding: 15px;
+      margin-bottom: 15px;
+      img {
+        width: 100%;
+      }
+    }
+    &_content {
+      &_head {
+        @include ubuntu-bold();
+        font-size: 14px;
+        padding-top: 15px;
+        margin-bottom: 1rem;
+      }
+      &_para {
+        @include ubuntu-light();
+        font-size: 10px;
+        padding-top: 0px;
+      }
+    }
+  }
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      padding-left: 7px;
+    }
+  }
+  &__feed {
+    font-size: 16px;
+    @include ubuntu-light();
+  }
+  &__like {
+    font-size: 16px;
+    @include ubuntu-bold();
+    p::after {
+      content: "11k";
+      padding-left: 10px;
+      font-size: 12px;
+      @include ubuntu-medium();
+      color: #dbdbdb;
+    }
+  }
+  &__share {
+    font-size: 16px;
+    @include ubuntu-bold();
+  }
+  &__filter {
+    font-size: 16px;
+    @include ubuntu-bold();
+  }
+}
+
+.searchform {
+  position: relative;
+  box-shadow: 0 0 30px #eeeeee;
+  margin-top: 30px;
+}
+
+.searchform input[type="text"] {
+  padding: 12px 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+  font-size: 14px;
+}
+.searchform input:hover {
+  outline: none;
+}
+.searchform button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  font-size: 17px;
+}
+
+.searchform button:hover {
+  outline: none;
+}
+
+.icon-col {
+  color: black;
+}

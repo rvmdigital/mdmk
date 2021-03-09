@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIADMK app</title>
+
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="modal fade" id="exitModalbttn" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-container modal-container--exitlive">
+                    <h3> <img src="./img/icons/vid.png" alt=""> Live Ended </h3>
+                    <img src="./img/icons/vaikodp.png" alt="">
+                    <div class="text-center">
+                        <button type="button" id="liveExit" class="bttn__exitlive bttn--rounded">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="body-container">
+        <div class="container-fluid live__container">
+            <img src="./img/live-broadcast/bg-img.png" alt="" class="live__feed">
+            <div class="live__content">
+                <p>Vaiko<br><span>is live</span></p>
+                <div class="live__content_count">
+                    <div class="live__content_icons">
+                        <img src="./img/live-broadcast/live-audience-1.png">
+                        <img src="./img/live-broadcast/live-audience-2.png">
+                        <img src="./img/live-broadcast/live-audience-1.png">
+                        <img src="./img/live-broadcast/live-audience-4.png">
+                    </div>
+                    <p>4.1M</p>
+                </div>
+                <button type="button" class="report__btn" id="exitModal">Exit Live</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/dist/js/live.bundle.js"></script>
+</body>
+
+</html>

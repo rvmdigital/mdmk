@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.851" height="25.998" viewBox="0 0 25.851 25.998">
+  <g id="bell" transform="translate(-330.721 -53)">
+    <g id="Group_895" data-name="Group 895" transform="translate(-4 3.543)">
+      <g id="notifications-button" transform="translate(348.245 49.457) rotate(43)">
+        <g id="notifications" transform="translate(0 0)">
+          <path id="Path_4471" data-name="Path 4471" d="M8.428,19.83a1.989,1.989,0,0,0,1.983-1.983H6.445A1.989,1.989,0,0,0,8.428,19.83Zm6.445-5.949V8.428A6.38,6.38,0,0,0,9.915,2.181V1.487a1.487,1.487,0,1,0-2.974,0v.694A6.38,6.38,0,0,0,1.983,8.428v5.453L0,15.864v.991H16.855v-.991Z"/>
+        </g>
+      </g>
+      <circle id="Ellipse_496" data-name="Ellipse 496" cx="3" cy="3" r="3" transform="translate(344 52.457)" fill="#ff5151"/>
+    </g>
+  </g>
+</svg>

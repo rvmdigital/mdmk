@@ -1,0 +1,23 @@
+.home-social {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .social__blog {
+      width: 298px;
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// Importing the external libraries
+
+@import "./external/libraries";
+
+// Base
+@import "./internal/base/fonts";
+@import "./internal/base/varibles";
+@import "./internal/base/mixins";
+@import "./internal/base/base";
+
+// Components
+
+@import "./internal/components/button";
+@import "./internal/components/modal";
+@import "./internal/components/checkboxes";
+@import "./internal/components/form-elements";
+@import "./internal/components/header";
+@import "./internal/components/navigation";
+@import "./internal/components/sec-navigation";
+@import "./internal/components/hamburger";
+@import "./internal/components/filter";
+
+// Pages
+@import "./internal/pages/login";
+@import "./internal/pages/otp";
+@import "./internal/pages/language";
+@import "./internal/pages/live";
+@import "./internal/pages/manifest";
+@import "./internal/pages/press";
+@import "./internal/pages/video";
+@import "./internal/pages/achiveall";
+@import "./internal/pages/achiveindividual";
+@import "./internal/pages/latestnews";
+@import "./internal/pages/socialmedia";
+@import "./internal/pages/history";
+@import "./internal/pages/mlafrontpage";
+@import "./internal/pages/people";
+@import "./internal/pages/mlalogin";
+@import "./internal/pages/report";
+@import "./internal/pages/mlalist";
+@import "./internal/pages/member";
+@import "./internal/pages/location";
+@import "./internal/pages/homesec";
+// home
+@import "./internal/pages/home/section";
+@import "./internal/pages/home/banner";
+@import "./internal/pages/home/live";
+@import "./internal/pages/home/achieve";
+@import "./internal/pages/home/candidates";
+@import "./internal/pages/home/news";
+@import "./internal/pages/home/social";
+@import "./internal/pages/home/vid";
+@import "./internal/pages/home/press";

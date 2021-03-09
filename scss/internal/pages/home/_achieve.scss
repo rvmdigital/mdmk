@@ -1,0 +1,22 @@
+.home-achieve {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    .achiveall__list_view {
+      min-width: 255px;
+      padding-bottom: 0;
+    }
+
+    a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

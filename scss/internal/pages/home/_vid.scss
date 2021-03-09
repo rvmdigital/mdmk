@@ -1,0 +1,61 @@
+.home-video {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &-item {
+      position: relative;
+      width: 198px;
+      padding-top: 82.828%;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 60%
+        );
+        z-index: 2;
+      }
+
+      &::after {
+        position: absolute;
+        content: url(/src/img/icons/play-button.svg);
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+        z-index: 1;
+        max-width: none;
+      }
+    }
+  }
+}

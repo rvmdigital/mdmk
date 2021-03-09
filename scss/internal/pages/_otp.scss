@@ -1,0 +1,55 @@
+.otp {
+  &__container {
+    min-height: 100vh;
+    background: #00043a url(/src/img/otp-verification/bg.png) no-repeat bottom
+      center;
+    background-size: cover;
+    padding-top: 60px;
+  }
+
+  &__header {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &-logo {
+      margin-left: 40px;
+    }
+  }
+
+  &__lead {
+    color: #fff;
+    max-width: 218px;
+    margin: auto;
+    margin-top: 125px;
+    text-align: center;
+  }
+
+  &__form {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    input {
+      width: 43px;
+      height: 50px;
+      background-color: #050c70;
+      border: none;
+      border-radius: 7px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 24px;
+      @include ubuntu-regular();
+      color: white;
+      margin: 0 5px;
+    }
+  }
+
+  &__time{
+      display: block;
+      color: #fff;
+      @include ubuntu-light();
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 38px;
+  }
+}

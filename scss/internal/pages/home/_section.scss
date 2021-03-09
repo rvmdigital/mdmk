@@ -1,0 +1,28 @@
+.home-section{
+    padding: 0 25px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: flex-end;
+
+        h3{
+            margin: 0;
+            font-size: 16px;
+            @include ubuntu-bold();
+        }
+
+        a{
+            color: #1CC1FF;
+            font-size: 10px;
+            @include ubuntu-medium();
+        }
+    }
+}
+
+.home-main{
+    background-color: #fafafa;
+}

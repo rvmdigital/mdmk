@@ -1,0 +1,24 @@
+//   Font-mixins
+
+@mixin ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+@mixin ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+@mixin ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+@mixin ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+@mixin ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}

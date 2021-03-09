@@ -1,0 +1,36 @@
+.language {
+  &__container {
+    min-height: 100vh;
+    position: relative;
+    background-color: #000;
+    background: #000 url(/src/img/language/bg.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__content {
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__top {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+    &-ct{
+      @include ubuntu-regular();
+      color:white;
+      font-size:24px;
+    }
+  }
+}

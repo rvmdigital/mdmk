@@ -1,0 +1,498 @@
+.mla {
+  &__container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 60%
+      );
+      z-index: 1;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    width: auto;
+    max-width: none;
+  }
+  &__content {
+    position: relative;
+    z-index: 5;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    img {
+      color: white;
+    }
+  }
+  &__title {
+    color: white;
+    z-index: 5;
+    margin-bottom: 80px;
+    &_icon {
+      margin-bottom: 15px;
+      display: flex;
+      img {
+        margin-right: 10px;
+      }
+    }
+    &_1 {
+      font-size: 8px;
+      background-color: #0ac775;
+      @include ubuntu-medium();
+      display: inline-block;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    &_2 {
+      font-size: 22px;
+      @include ubuntu-bold();
+    }
+    &_3 {
+      font-size: 12px;
+      @include ubuntu-medium();
+      margin-bottom: 8px;
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+
+    &--fir,
+    &--sec {
+      display: inline-flex;
+      font-size: 12px;
+      @include ubuntu-regular();
+      p {
+        padding-left: 5px;
+        margin: 0;
+      }
+    }
+    &--fir::before {
+      content: url("/src/img/icons/call.svg");
+    }
+    &--sec::before {
+      content: url("/src/img/icons/mail.svg");
+    }
+  }
+
+  &__title {
+    padding-top: 35px;
+    &_head {
+      h3 {
+        font-size: 16px;
+        color: black;
+        @include ubuntu-bold();
+      }
+      display: flex;
+      align-items: baseline;
+      padding-bottom: 20px;
+      &::before {
+        content: url("/src/img/icons/blue.png");
+        padding-right: 5px;
+      }
+      button {
+        margin-left: auto;
+      }
+      .bttn__upload {
+        font-size: 14px;
+        @include ubuntu-medium();
+      }
+    }
+    &_para {
+      font-size: 14px;
+      @include ubuntu-regular();
+    }
+  }
+  &__biography {
+    margin-top: 35px;
+    &_para {
+      font-size: 14px;
+      @include ubuntu-regular();
+    }
+    &_history {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &_born,
+    &_place,
+    &_proff {
+      text-align: center;
+      p {
+        margin: 0;
+        font-size: 12px;
+        @include ubuntu-bold();
+      }
+      p:first-of-type {
+        font-size: 10px;
+        color: #6b6b6b;
+        @include ubuntu-regular();
+        padding-top: 6px;
+      }
+      // p:nth-child(2) {
+
+      // }
+    }
+  }
+}
+
+// MLA SOCIAL
+.mla-social {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .mlasocial__blog {
+      width: 298px;
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+}
+.mlasocial {
+  &__container {
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  &__blog {
+    background-color: white;
+    box-shadow: 0 17px 135px #eeeeee;
+    padding: 15px;
+    &_list {
+      margin-bottom: 20px;
+    }
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+    }
+    &_title {
+      display: flex;
+      align-items: center;
+    }
+    &_content {
+      padding-left: 10px;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 14px;
+        @include ubuntu-bold();
+        margin: 0;
+      }
+      p {
+        font-size: 10px;
+        @include ubuntu-light();
+        margin: 0;
+      }
+    }
+    &_tmcontent {
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 12px;
+        @include ubuntu-regular();
+        margin: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+// IN THE NEWS
+
+.mla-news {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &-item {
+      position: relative;
+      width: 318px;
+      padding-top: 52.83%;
+      overflow: hidden;
+      border-radius: 5px;
+
+      &:after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 60%
+        );
+        z-index: 1;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+      }
+
+      &-content {
+        position: absolute;
+        z-index: 5;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        @include ubuntu-medium();
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Exclusive Picture
+.mla-candidates {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &-item {
+      position: relative;
+      width: 155px;
+      padding-top: 94.45%;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        // min-height: 100%;
+        height: auto;
+        width: auto;
+      }
+
+      &-content {
+        position: absolute;
+        z-index: 5;
+        color: #fff;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+
+        p {
+          font-size: 11px;
+          @include ubuntu-bold();
+          margin-bottom: 0;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Exlusive video
+
+.mla-video {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &-cover {
+      position: relative;
+      display: flex;
+    }
+
+    a:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &-item {
+      position: relative;
+      width: 198px;
+      padding-top: 92.828%;
+      // overflow: hidden;
+
+      &::after {
+        position: absolute;
+        content: url(/src/img/icons/play-button.svg);
+        top: 60%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+        z-index: 1;
+        max-width: none;
+      }
+    }
+  }
+}
+
+// Manifesto
+
+.mlalogin {
+  &__manifesto {
+    margin-top: 30px;
+    display: flex;
+    font-size: 10px;
+    @include ubuntu-bold();
+    width: 50%;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      display: flex;
+    }
+    p:first-of-type::before {
+      content: "";
+      background-color: #1dd348;
+      width: 4px;
+      height: 15px;
+      display: inline-block;
+      align-self: center;
+      margin: 0;
+      margin-right: 5px;
+    }
+    p:nth-child(2)::before {
+      content: "";
+      background-color: #f9e20a;
+      width: 4px;
+      height: 15px;
+      display: inline-block;
+      align-self: center;
+      margin: 0;
+      margin-right: 5px;
+    }
+  }
+}
+
+.mlamanifesto {
+  &__list {
+    margin-top: 50px;
+    ul {
+      padding-left: 0;
+    }
+    li {
+      @include ubuntu-light();
+      font-size: 12px;
+      list-style-type: none;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      span {
+        width: 95%;
+      }
+    }
+    li::before {
+      content: "";
+      background-color: #1dd348;
+      width: 4px;
+      height: 15px;
+      display: block;
+      align-self: center;
+    }
+  }
+}
+
+.mla__meetings {
+  &-video {
+    width: 263px;
+    height: 148px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .owl-item {
+    transform: scale(0.9);
+    transition: all .5s ease;
+
+    &.active.center {
+      transform: scale(1);
+    }
+  }
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: inherit !important;
+}

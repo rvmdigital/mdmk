@@ -1,0 +1,14 @@
+// Import the necessary Custom variables
+
+@import './variables';
+
+// Import only the modules needed from bootstrap. All modules are imported here
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+
+// Import owl carousel styles
+
+@import"./../../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+@import"./../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+
+//Web Fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
